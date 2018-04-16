@@ -1,0 +1,19 @@
+{
+  "name": "musnow/alipayf2f",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "musnow",
+      "email": "me@yubanmei.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Musnow\\AlipayF2F\\": "src/"
+    }
+  }
+}
