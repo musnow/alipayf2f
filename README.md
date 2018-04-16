@@ -2,14 +2,14 @@
 本项目是为支付宝当面付适配的扩展。
 
 当面付是支付宝的一款支付产品，支持二维码和条码支付。   
-但是官方提供的php demo使用了比较旧的框架封装，为了方便使用我将官方的demo抽离并封装成composer包方便使用；
-##使用依赖
+但是官方提供的php demo使用了比较旧的框架封装，为了方便使用我将官方的demo抽离并封装成composer包方便使用；   
+##使用依赖  
 AlipayF2F 需要 PHP >= 5.5以上的版本，同时需要PHP安装以下扩展
 ```$xslt
 - cUR extension
 - openssl
 ```
-##如何使用
+##如何使用  
 如果你想使用本项目请使用 composer 安装
 
 ```$xslt
@@ -53,16 +53,16 @@ $ret = $alipay->qrPay($data);     //扫码支付
 
 print_r($ret);                    //返回数据
 ```
-##常见问题
+##常见问题  
 如果出现```curl: (60) SSL certificate problem```怎么办
 
-1、php添加ssl ca证书链
+php添加ssl ca证书链
 在```https://curl.haxx.se/docs/caextract.html```下载最新的ca证书然后到php.ini里面添加路径。
 ```$xslt
 curl.cainfo="/path/to/downloaded/cacert.pem"
 # 绝对路径
 ```
-2、在实例化时添加关闭ssl的参数
+or 在实例化时添加关闭ssl的参数
 ```$xslt
 $config = [
     'ssl' => false
