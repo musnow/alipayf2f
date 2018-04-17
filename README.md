@@ -30,7 +30,7 @@ $ composer update
 <?php
 use \Musnow\AlipayF2F\Pay;
 
-require '/vendor/autoload.php';
+require 'vendor/autoload.php';
 
 $config = [
     'appId'         => '',    //应用appid
